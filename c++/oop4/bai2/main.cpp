@@ -34,7 +34,7 @@ class Date {
             this->year = year;
         }
         string toString() {
-            return to_string(day) + "/" + to_string(month) + "/" + to_string(year);
+            return (day < 10 ? "0" : "") + to_string(day) + "/" + (month < 10 ? "0" : "") + to_string(month) + "/" + (year < 10 ? "0" : "") + to_string(year);
         }
 
 };
